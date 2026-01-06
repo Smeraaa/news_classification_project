@@ -124,6 +124,21 @@ The project uses **Logistic Regression** as the classification model. The model 
 - `"naive_bayes"`
 - `"svm"`
 
+### Feature Engineering
+
+Text is converted to numerical features using *TF-IDF (Term Frequency-Inverse Document Frequency)* vectorization with the following parameters:
+- Maximum features: 5000
+- N-gram range: (1, 2) - includes unigrams and bigrams
+- Minimum document frequency: 2
+- Maximum document frequency: 0.95
+- English stopwords removal
+
+### Training Configuration
+
+- Train-test split: 80% training, 20% testing
+- Random state: 42 (for reproducibility)
+- Stratified splitting to maintain class distribution
+- 
 ## Final Result Summary
 
 The model achieves high accuracy on the AG News dataset. Typical results:
