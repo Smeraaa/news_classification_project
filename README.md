@@ -124,65 +124,11 @@ The project uses **Logistic Regression** as the classification model. The model 
 - `"naive_bayes"`
 - `"svm"`
 
-### Feature Engineering
-
-Text is converted to numerical features using **TF-IDF (Term Frequency-Inverse Document Frequency)** vectorization with the following parameters:
-- Maximum features: 5000
-- N-gram range: (1, 2) - includes unigrams and bigrams
-- Minimum document frequency: 2
-- Maximum document frequency: 0.95
-- English stopwords removal
-
-### Training Configuration
-
-- Train-test split: 80% training, 20% testing
-- Random state: 42 (for reproducibility)
-- Stratified splitting to maintain class distribution
-
 ## Final Result Summary
 
 The model achieves high accuracy on the AG News dataset. Typical results:
 - **Test Accuracy**: ~90-92%
 - **Categories**: 4 classes (World, Sports, Business, Sci/Tech)
 - **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
-
 Detailed results including per-class metrics and confusion matrix are saved in `results/metrics.txt`.
-
-## GitHub Repository Link
-
-[Your GitHub repository link here]
-
-## Video Explanation Link
-
-[Your video explanation link here]
-
-## Key Features
-
-- ✅ Pure Python implementation (no Jupyter notebooks)
-- ✅ Modular and maintainable code structure
-- ✅ Automatic dataset download
-- ✅ Comprehensive text preprocessing
-- ✅ TF-IDF feature extraction
-- ✅ Model persistence (saved models can be reused)
-- ✅ Detailed evaluation metrics
-- ✅ Fully runnable from terminal
-- ✅ Well-documented code
-
-## Dependencies
-
-- `pandas`: Data manipulation and analysis
-- `scikit-learn`: Machine learning algorithms and utilities
-- `numpy`: Numerical computing
-- `datasets`: Hugging Face datasets library for easy dataset access
-
-## Notes
-
-- The dataset is automatically downloaded on first run
-- All models and vectorizers are saved as pickle files for reuse
-- The pipeline is designed to be reproducible (fixed random state)
-- Configuration can be easily modified in `src/config.py`
-
-## License
-
-This project is created for educational purposes as part of an AI/ML assignment.
 
