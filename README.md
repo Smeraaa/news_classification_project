@@ -127,7 +127,7 @@ The project uses **Logistic Regression** as the classification model. The model 
 ## Final Result Summary
 
 The model achieves high accuracy on the AG News dataset. Typical results:
-- **Test Accuracy**: ~90-92%
+- **Test Accuracy**: ~90-93%
 - **Categories**: 4 classes (World, Sports, Business, Sci/Tech)
 - **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score, and Confusion Matrix
 Detailed results including per-class metrics and confusion matrix are saved in `results/metrics.txt`.
